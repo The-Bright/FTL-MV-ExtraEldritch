@@ -1,0 +1,78 @@
+<FTL>
+
+<mod:findLike type="scripts">
+    <mod-append:script>data/eld_scripts/eld_brightness_particles.lua</mod-append:script>
+    <mod-append:script>data/eld_scripts/eld_weapon_functions.lua</mod-append:script>
+    <mod-append:script>data/eld_scripts/eld_caterpillar.lua</mod-append:script>
+	<mod-append:script>data/eld_scripts/eld_torments.lua</mod-append:script>
+</mod:findLike>
+
+
+
+
+<mod:findLike type="crew" limit="1">
+
+    <mod-append:race name="caterpillar_head">
+
+		<maxHealth>200</maxHealth>
+		<damageMultiplier>100</damageMultiplier>
+		<rangedDamageMultiplier>0.01</rangedDamageMultiplier>
+
+        <repairSpeed>1.2</repairSpeed>
+		<suffocationModifier>0.83</suffocationModifier>
+		<fireDamageMultiplier>0.60</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<animBase>human</animBase>
+		<deathSounds>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+		</deathSounds>
+		<skills>
+			<piloting req="13"/>
+			<engines req="13"/>
+			<shields req="50"/>
+			<weapons req="58"/>
+			<repair req="12"/>
+			<combat req="7"/>
+		</skills>
+	</mod-append:race>
+
+	<mod-append:race name="caterpillar_segment">
+        <repairSpeed>1.2</repairSpeed>
+		<suffocationModifier>0.83</suffocationModifier>
+		<fireDamageMultiplier>0.60</fireDamageMultiplier>
+		<moveSpeedMultiplier>1.2</moveSpeedMultiplier>
+		<controllable>false</controllable>
+		<resistsMindControl>true</resistsMindControl>
+		<canPhaseThroughDoors>true</canPhaseThroughDoors>
+		<canMan>false</canMan>
+		<canRepair>false</canRepair>
+		<canSabotage>false</canSabotage>
+		<noClone>true</noClone>
+		<canFight>false</canFight>
+		<canTeleport>false</canTeleport>
+
+		<noAI>true</noAI>
+
+		<passiveHealAmount>2</passiveHealAmount>
+		<passiveHealDelay>0</passiveHealDelay>
+
+		<animBase>human</animBase>
+		<deathSounds>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+		</deathSounds>
+		<skills>
+			<piloting req="13"/>
+			<engines req="13"/>
+			<shields req="50"/>
+			<weapons req="58"/>
+			<repair req="12"/>
+			<combat req="7"/>
+		</skills>
+	</mod-append:race>
+
+</mod:findLike>
+
+</FTL>
+

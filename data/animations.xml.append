@@ -1,0 +1,361 @@
+<FTL>
+
+<!--
+##############
+## Weapons: ##
+##############
+-->
+
+<animSheet name="geisel_beam" w="896" h="88" fw="64" fh="88">weapon/geisel_beam.png</animSheet>
+<weaponAnim name="geisel_beam">
+    <sheet>geisel_beam</sheet>
+    <desc length="14" x="0" y="0"/>
+    <chargedFrame>1</chargedFrame>
+    <fireFrame>2</fireFrame>
+    <firePoint x="36" y="50"/>
+    <mountPoint x="8" y="62"/>
+    <chargeImage>weapon/geisel_beam_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="bomblauncher_rift" w="1332" h="38" fw="37" fh="38">weapon/bomblauncher_rift.png</animSheet>
+<weaponAnim name="bomblauncher_rift">
+	<sheet>bomblauncher_rift</sheet>
+	<desc length="36" x="0" y="0"/>
+	<chargedFrame>15</chargedFrame>
+	<fireFrame>27</fireFrame>
+	<firePoint x="20" y="21" />
+	<mountPoint x="4" y="27" />
+	<chargeImage>weapon/bomblauncher_rift_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="bomb_rift" w="525" h="35" fw="35" fh="35">projectiles/bomb_rift.png</animSheet>
+<anim name="bomb_rift">
+	<sheet>bomb_rift</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="missiles_rift" w="126" h="58" fw="42" fh="58">weapon/missiles_rift.png</animSheet>
+<weaponAnim name="missiles_rift">
+	<sheet>missiles_rift</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="25" y="18"/>
+	<mountPoint x="6" y="41"/>
+	<chargeImage>weapon/missiles_rift_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="rift_missile_1" w="32" h="80" fw="32" fh="80">projectiles/rift_missile_1.png</animSheet>
+<anim name="rift_missile_1">
+	<sheet>rift_missile_1</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<!--
+<animSheet name="ion_barrage_rift" w="24" h="24" fw="24" fh="24">projectiles/ion_barrage_rift.png</animSheet>
+<anim name="ion_barrage_rift">
+	<sheet>ion_barrage_rift</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+-->
+
+<animSheet name="explosion_rift" w="315" h="35" fw="35" fh="35">projectiles/explosion_rift.png</animSheet>
+<anim name="explosion_rift">
+	<sheet>explosion_rift</sheet>
+	<desc length="9" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="beam_entropy_fire" w="1040" h="66" fw="52" fh="66">weapon/beam_entropy_fire.png</animSheet>
+<weaponAnim name="beam_entropy_fire">
+    <sheet>beam_entropy_fire</sheet>
+    <desc length="20" x="0" y="0"/>
+    <chargedFrame>6</chargedFrame>
+    <fireFrame>7</fireFrame>
+    <firePoint x="28" y="27"/>
+    <mountPoint x="4" y="44"/>
+    <chargeImage>weapon/beam_entropy_fire_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="beam_entropy_hull" w="765" h="74" fw="51" fh="74">weapon/beam_entropy_hull.png</animSheet>
+<weaponAnim name="beam_entropy_hull">
+    <sheet>beam_entropy_hull</sheet>
+    <desc length="15" x="0" y="0"/>
+    <chargedFrame>1</chargedFrame>
+    <fireFrame>2</fireFrame>
+    <firePoint x="28" y="41"/>
+    <mountPoint x="4" y="57"/>
+    <chargeImage>weapon/beam_entropy_hull_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="torment_projector_frost" w="1800" h="81" fw="50" fh="81">weapon/torment_projector_frost.png</animSheet>
+<weaponAnim name="torment_projector_frost">
+    <sheet>torment_projector_frost</sheet>
+    <desc length="36" x="0" y="0"/>
+    <chargedFrame>27</chargedFrame>
+    <fireFrame>28</fireFrame>
+    <firePoint x="1" y="1"/> <!--the projectile fired by torment projectors is invisible, so this doesn't matter-->
+    <mountPoint x="4" y="61"/>
+    <chargeImage>weapon/torment_projector_frost_glow.png</chargeImage>-->
+</weaponAnim>
+
+
+
+
+
+<!--
+###########
+## Crew: ##
+###########
+-->
+
+<animSheet name="caterpillar_head" w="315" h="455" fw="35" fh="35">people/caterpillar_head_base.png</animSheet>
+<anim name="caterpillar_head_clone">
+	<sheet>caterpillar_head</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="caterpillar_head_death_right">
+	<sheet>caterpillar_head</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="caterpillar_head_death_left">
+	<sheet>caterpillar_head</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="caterpillar_head_walk_down">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_head_walk_right">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_head_walk_up">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_head_walk_left">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_head_shoot_down">
+	<sheet>caterpillar_head</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_head_shoot_right">
+	<sheet>caterpillar_head</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_head_shoot_up">
+	<sheet>caterpillar_head</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_head_shoot_left">
+	<sheet>caterpillar_head</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_head_fire_down">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_head_fire_right">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_head_fire_up">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_head_fire_left">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_head_repair">
+	<sheet>caterpillar_head</sheet>
+	<desc length="2" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_head_punch_up">
+	<sheet>caterpillar_head</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_head_punch_down">
+	<sheet>caterpillar_head</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_head_teleport">
+	<sheet>caterpillar_head</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="caterpillar_head_type_right">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="caterpillar_head_type_left">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="caterpillar_head_type_up">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="caterpillar_head_type_down">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="caterpillar_head_portrait">
+	<sheet>caterpillar_head</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="caterpillar_segment" w="315" h="455" fw="35" fh="35">people/caterpillar_segment_base.png</animSheet>
+<anim name="caterpillar_head_clone">
+	<sheet>caterpillar_head</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="caterpillar_segment_death_right">
+	<sheet>caterpillar_head</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="caterpillar_segment_death_left">
+	<sheet>caterpillar_head</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="caterpillar_segment_walk_down">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_segment_walk_right">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_segment_walk_up">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_segment_walk_left">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_segment_shoot_down">
+	<sheet>caterpillar_head</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_segment_shoot_right">
+	<sheet>caterpillar_head</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_segment_shoot_up">
+	<sheet>caterpillar_head</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_segment_shoot_left">
+	<sheet>caterpillar_head</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_segment_fire_down">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_segment_fire_right">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_segment_fire_up">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_segment_fire_left">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_segment_repair">
+	<sheet>caterpillar_head</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_segment_punch_up">
+	<sheet>caterpillar_head</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_segment_punch_down">
+	<sheet>caterpillar_head</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="caterpillar_segment_teleport">
+	<sheet>caterpillar_head</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="caterpillar_segment_type_right">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="caterpillar_segment_type_left">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="caterpillar_segment_type_up">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="caterpillar_segment_type_down">
+	<sheet>caterpillar_head</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="caterpillar_segment_portrait">
+	<sheet>caterpillar_head</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+
+
+</FTL>
