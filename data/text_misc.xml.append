@@ -1,7 +1,0 @@
-<FTL>
-
-<text name="tip_rift">Tip: Rift weapons will force affected crew to teleport erratically a few times.</text>
-<text name="tip_entropy_beam">Tip: In addition to any flat damage, entropy beams will roll for damage on each tile hit. Each beam has conditions that affect roll chances.</text>
-<text name="tip_torment">Tip: Torments will float around a ship and cause debuffs. They dissipate when their projector loses full charge.</text>
-
-</FTL>

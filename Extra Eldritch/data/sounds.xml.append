@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FTL>
+<!-- I LOVE SOUNDS HELL YEAH-->
+<rift_sound volume="8">weapons/rift_sound.ogg</rift_sound>
+<!-- I LOVE SOUNDS HELL YEAH-->
+<rift_sound_1 volume="8">weapons/rift_sound_1.ogg</rift_sound_1>
+<!-- I LOVE SOUNDS HELL YEAH-->
+<projectile_teleport volume="2">weapons/projectile_teleport.ogg</projectile_teleport>
+</FTL>
