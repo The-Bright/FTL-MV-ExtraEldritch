@@ -14,13 +14,13 @@ local tormentBlueprints = mods.eld.tormentBlueprints
 
 --tormentBlueprints["TORMENT_<NAME>"] = {
 --    speed          = 0,                               --pixels per second
---    shots          = 4,                               --shots per attack
 --    spawnThreshold = 0,                               --how much the projector needs to charge before it spawns (scale 0-1)
 --    mainAnim       = {duration = 0, frames = 0},      --main animation
 --    spawnAnim      = {duration = 0, frames = 0},      --spawning animation
---    dissipateAnim  = {duration = 0, frames = 0},      --de-power animation
 --    detonateAnim   = {duration = 0, frames = 0},      --detonate animation
 --    explosion      = {sysDamage = 0, hullDamage = 0}, --detonation stats
+--    weaponPointX   = 27,                              --X location of the orb on the weapon sprite when summoned
+--    weaponPointY   = 5,                               --ditto, Y location
 --    hasEye         = false                            --indicates whether to include an eye particle
 --}
 
@@ -29,12 +29,21 @@ tormentBlueprints["TORMENT_FROST"] = { --accessed with torment.bp
     spawnThreshold = 0.3, --0.16,
     mainAnim       = {duration = 1, frames = 8},
     spawnAnim      = {duration = 0.8, frames = 8},
-    dissipateAnim  = {duration = 2, frames = 9},
-    detonateAnim   = {duration = 2, frames = 9},
     explosion      = {sysDamage = 3, hullDamage = 0, ionDamage = 0},
     weaponPointX   = 27,
     weaponPointY   = 5,
     hasEye         = false
+}
+
+tormentBlueprints["TORMENT_DEATH"] = {
+    speed          = 50,
+    spawnThreshold = 0.3,
+    mainAnim       = {duration = 1.3, frames = 8},
+    spawnAnim      = {duration = 0.8, frames = 8},
+    explosion      = {sysDamage = 3, hullDamage = 0, ionDamage = 0},
+    weaponPointX   = 27,
+    weaponPointY   = 5,
+    hasEye         = true
 }
 
 local function game_is_paused()
@@ -130,7 +139,7 @@ local function light_flash(torment, location, iShipId)
         7,
         0.8,
         location,
-        0,
+        math.random(0, 360),
         iShipId,
         "SHIP"
     )
